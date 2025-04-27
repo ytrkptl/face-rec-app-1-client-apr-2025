@@ -10,16 +10,16 @@ import "./index.css";
 const rootElement = document.getElementById("root");
 
 if (!rootElement) {
-	console.error("Root element not found");
+  console.error("Root element not found");
 } else {
-	const root = createRoot(rootElement);
-	root.render(
-		<StrictMode>
-			<Provider store={store}>
-				<BrowserRouter>
-					<App />
-				</BrowserRouter>
-			</Provider>
-		</StrictMode>
-	);
+  const root = createRoot(rootElement);
+  root.render(
+    <StrictMode>
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>
+    </StrictMode>
+  );
 }

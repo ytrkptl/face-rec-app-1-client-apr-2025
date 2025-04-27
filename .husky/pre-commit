@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Check if any .env files (but not .env.example) are staged for commit
+if git diff --cached --name-only | grep -q "^\.env$"; then
+  echo "Error: Attempting to commit .env file. These files should not be committed for security reasons."
+  echo "Please remove the .env file from your commit using: git reset .env"
+  echo "Or add it to .gitignore if it's not already there."
+  exit 1
+fi
+
+# Run lint-staged for additional checks
+npx lint-staged

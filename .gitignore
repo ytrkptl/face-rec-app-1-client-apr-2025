@@ -26,5 +26,15 @@ vite.config.dev.txt
 !utils/
 !utils/*
 
-prod-env
+# Environment files
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Allow example environment files
+!.env.example
+!.env.*.example
+
+prod-env
