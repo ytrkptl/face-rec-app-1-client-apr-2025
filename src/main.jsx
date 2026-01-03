@@ -12,6 +12,7 @@ const rootElement = document.getElementById("root");
 if (!rootElement) {
   console.error("Root element not found");
 } else {
+  console.log("App Version: v0.0.3-debug"); // Added for debugging deployment
   const root = createRoot(rootElement);
   root.render(
     <StrictMode>
