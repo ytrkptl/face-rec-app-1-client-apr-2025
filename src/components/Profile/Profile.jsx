@@ -42,10 +42,10 @@ const Profile = () => {
   const { name, age, pet, handle, url } = profileState;
 
   useEffect(() => {
-    // if the profile photo url is from avatar-letter.fun/api
+    // if the profile photo url is from avatar-letter.yatrik.dev/api
     // then we need to change the url to the large version of the photo
     // so it looks better in the profile modal
-    if (url.includes("avatar-letter.fun/api")) {
+    if (url.includes("avatar-letter.yatrik.dev/api")) {
       if (profileOpen) {
         // replace the big word with large
         const url2 = url.replace("big", "large");
