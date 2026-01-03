@@ -1,3 +1,4 @@
+import { version } from "../../../package.json";
 import "./Footer.css";
 
 const Footer = () => {
@@ -64,6 +65,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="FooterAuthor">Created by: Yatrik Patel, September 4, 2019</p>
+      <p className="FooterVersion">v{version}</p>
     </footer>
   );
 };
