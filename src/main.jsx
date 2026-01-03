@@ -13,7 +13,6 @@ if (!rootElement) {
   console.error("Root element not found");
 } else {
   const root = createRoot(rootElement);
-  console.log("App Version: v0.0.3-debug"); // Added for debugging deployment
   root.render(
     <StrictMode>
       <Provider store={store}>
