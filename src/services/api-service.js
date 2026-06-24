@@ -1,7 +1,7 @@
 let baseURLForApi;
 
 if (import.meta.env.MODE === "production") {
-  baseURLForApi = import.meta?.env?.VITE_PROD_BASE_API_URL || "https://www.face-rec-app-api.yatrik.dev";
+  baseURLForApi = import.meta?.env?.VITE_PROD_BASE_API_URL || "https://face-rec-app-api.yatrikpatel.com";
 } else {
   baseURLForApi = import.meta?.env?.VITE_DEV_ONLY_BASE_API_URL || "http://localhost:5000";
 }
